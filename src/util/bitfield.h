@@ -58,6 +58,11 @@ void setBitField(uint64_t* data, uint64_t value, int startPos, int numBits);
  */
 uint8_t nthByte(uint64_t source, int byteNum);
 
+/* Returns a bitmask for the given number of bits, starting from the least
+ * significant bit.
+ */
+uint64_t bitmask(int numBits);
+
 } // namespace bitfield
 } // namespace util
 } // namespace openxc

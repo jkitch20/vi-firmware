@@ -10,7 +10,7 @@ int findEndBit(int startBit, int numBits) {
     return endBit == 0 ? 8 : endBit;
 }
 
-uint64_t bitmask(int numBits) {
+uint64_t openxc::util::bitfield::bitmask(int numBits) {
     return (0x1 << numBits) - 1;
 }
 
